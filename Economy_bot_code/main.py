@@ -6,12 +6,12 @@ import os
 import json
 import random
 
-client = commands.Bot(command_prefix=')')
+client = commands.Bot(command_prefix='.')
 
 client.remove_command("help")
 
 status = cycle(
-    ['Try )help','Prefix - )'])
+    ['Try .help','Prefix - .'])
 
 
 @client.event
@@ -434,4 +434,4 @@ for filename in os.listdir('./cogs'):
         client.load_extension(f'cogs.{filename[:-3]}')
 
 
-client.run('Token')
+client.run('NzI5MDgyNjQyNTI3NjgyNjAw.XwDxHw.Y5IbIS1qwS1eHRWC3rqzUBv9RqY')
